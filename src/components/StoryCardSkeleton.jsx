@@ -6,6 +6,7 @@ const StoryCardSkeleton = () => {
   return (
     <Card className="h-full flex flex-col">
       <CardContent className="flex-grow pt-6">
+        <Skeleton className="h-40 w-full mb-4" />
         <Skeleton className="h-6 w-3/4 mb-2" />
         <Skeleton className="h-4 w-1/4 mb-4" />
       </CardContent>

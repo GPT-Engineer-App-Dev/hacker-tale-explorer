@@ -29,7 +29,7 @@ const HackerNewsList = () => {
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6 text-center">Hacker News Top Stories</h1>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
         {isLoading
           ? Array(12).fill().map((_, index) => <StoryCardSkeleton key={index} />)
           : filteredStories.map(story => <StoryCard key={story.objectID} story={story} />)
